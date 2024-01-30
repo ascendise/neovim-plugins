@@ -37,6 +37,7 @@ return {
 		keys = {
 			{ "gD",         vim.lsp.buf.declaration },
 			{ "gd",         vim.lsp.buf.definition },
+			{ "K",          vim.lsp.buf.hover },
 			{ "gi",         vim.lsp.buf.implementation },
 			{ "<C-k>",      vim.lsp.buf.signature_help },
 			{ "<leader>D",  vim.lsp.buf.type_definitions },
