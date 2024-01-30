@@ -11,11 +11,14 @@
 -- [0 - 799] To Be Defined
 
 -- General Vim Config
-vim.g.mapleader = ',' 
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.g.mapleader = ','
 vim.opt.smartindent = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.autoindent = true
 vim.opt.number = true
+vim.opt.colorcolumn='120'
+vim.opt.relativenumber = true
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -32,4 +35,3 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 vim.cmd[[colorscheme tokyonight-night]]
-
